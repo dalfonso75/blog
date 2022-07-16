@@ -1,0 +1,13 @@
+.c-tags{
+    display: block;
+    margin: 50px 50px;
+    padding: 0;
+}
+.tags__select{
+    margin-left: 20px;
+}
+.tags__select-option{
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+}
