@@ -1,11 +1,11 @@
 import "./App.css";
 
-import ArchivePosts from "./components/ArchivePosts";
+import ArchivePost from "./components/ArchivePost";
 
 function App() {
   return (
     <div className="App">
-      <ArchivePosts />
+      <ArchivePost />
     </div>
   );
 }
