@@ -8,10 +8,10 @@ export default function UseAllPosts() {
     dataGet: null,
   });
 
-  const get = useCallback(() => {
+  const get = useCallback((numberPage) => {
     setStateGet({ loadingGet: true, errorGet: null });
     allPostsService
-      .getAllPosts()
+      .getAllPosts(numberPage)
       .then((data) => {
         setStateGet({
           loadingGet: false,
