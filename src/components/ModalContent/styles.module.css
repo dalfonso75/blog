@@ -1,0 +1,54 @@
+.StyledModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 50vh;
+  z-index: 999;
+  background-color: #fff;
+}
+.StyledModal {
+  width: 70%;
+  padding: 15px;
+}
+.StyledModalBody {
+  padding-top: 10px;
+}
+.closeModal__button {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  top: 5px;
+  right: 12px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #000;
+  z-index: 9998;
+  cursor: pointer;
+}
+.closeModal {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.closeModal svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+.closeModal svg path {
+  transition: fill 0.3s ease;
+  fill: #fff;
+}
