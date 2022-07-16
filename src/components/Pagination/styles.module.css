@@ -1,0 +1,13 @@
+.c-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  column-gap: 20px;
+}
+.pagination__number-page {
+  font-size: 20px;
+}
+.pagination__button {
+  font-size: 20px;
+}
