@@ -1,0 +1,37 @@
+.c-post {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+}
+.c-post:hover{
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.post__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.post__content {
+  padding: 10px 20px;
+}
+.post__tags {
+  display: flex;
+  padding: 0;
+  margin: 0 0 0 10px;
+  list-style: none;
+}
+.post__read-more{
+  margin-top: 10px;
+}
