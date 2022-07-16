@@ -2,12 +2,18 @@ import Post from "../Post";
 
 import styles from "./styles.module.css";
 
-export default function Posts({posts}) {
- 
+export default function Posts({ posts, setShowModal, setPostID }) {
   return (
     <ul className={styles["c-posts"]}>
       {posts?.data?.map((post) => (
-        <li key={post.id} className={styles["loop-posts__post"]}>
+        <li
+          key={post.id}
+          className={styles["loop-posts__post"]}
+          onClick={() => {
+            setShowModal(true);
+            setPostID(post.id);
+          }}
+        >
           <Post
             postId={post.id}
             postImage={post.image}

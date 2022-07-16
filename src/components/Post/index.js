@@ -9,6 +9,9 @@ export default function Post({
   postAuthor,
   postTags,
 }) {
+  const openComments = () =>{
+    
+  }
   return (
     <article className={styles["c-post"]}>
       <header>
@@ -31,7 +34,9 @@ export default function Post({
           authorIMage={postAuthor.picture}
           authorName={postAuthor.firstName + " " + postAuthor.lastName}
         />
-        <button className={styles["post__read-more"]}>Leer más</button>
+        <button className={styles["post__read-more"]} onClick={() => openComments}>
+          Leer más
+        </button>
       </footer>
     </article>
   );
